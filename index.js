@@ -8,7 +8,7 @@ bot.on('ready', () => {
     bot.user.setPresence({
         activity: {
             name: 't!play',
-            type: 'watch',
+            type: 'WATCHING',
             url: 'https://www.youtube.com/watch?v=LYOrjkdbMDQ'
         }
     })
