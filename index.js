@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
+const TOKEN = 'ODU5ODIyMjQwNTE4MzczNDA3.YNyR3A.1EcRoaedZDeFpT00z2YH7wzb4Kg'
 const prefix = 't!'
 
 bot.on('ready', () => {
@@ -7,9 +8,8 @@ bot.on('ready', () => {
 
     bot.user.setPresence({
         activity: {
-            name: 't!play',
-            type: 'STREAMING',
-            url: 'https://www.youtube.com/watch?v=LYOrjkdbMDQ'
+            name: 'Ist auf 👑Max sein Server👑',
+            type: 'PLAYING',
         }
     })
 })
@@ -75,4 +75,4 @@ bot.on('message', message => {
     }
 })
 
-bot.login(process.env.token)
+bot.login(TOKEN)
