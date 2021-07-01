@@ -9,6 +9,7 @@ bot.on('ready', () => {
         activity: {
             name: 't!play',
             type: 'PLAYING',
+            url: 'https://www.youtube.com'
         }
     })
 })
