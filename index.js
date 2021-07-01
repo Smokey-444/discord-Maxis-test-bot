@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const TOKEN = 'ODU5ODIyMjQwNTE4MzczNDA3.YNyR3A.Y8ljFqxiXmFBR0s4rP_Efg0FZ_M'
 const prefix = 't!'
 
 bot.on('ready', () => {
@@ -9,8 +8,7 @@ bot.on('ready', () => {
     bot.user.setPresence({
         activity: {
             name: 't!help',
-            type: 'Streming',
-            url: 'https://www.youtube.com/watch?v=UkQRrnivATc'
+            type: 'PLAYING',
         }
     })
 })
@@ -76,4 +74,4 @@ bot.on('message', message => {
     }
 })
 
-bot.login(TOKEN)
+bot.login(process.env.token)
