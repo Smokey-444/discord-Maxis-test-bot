@@ -8,7 +8,7 @@ bot.on('ready', () => {
 
     bot.user.setPresence({
         activity: {
-            name: 'Ist auf 👑Max sein Server👑',
+            name: 't!play',
             type: 'PLAYING',
         }
     })
